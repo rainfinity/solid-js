@@ -20,9 +20,11 @@ const routes = [
 
 const App: Component = () => {
   return (
-    <Router routes={routes}>
+    <Router>
       <Nav />
-      <Route />
+      <Route path="/" />
+      <Route path="/about" />
+      <Route path="*all" />
     </Router>
   );
 };
