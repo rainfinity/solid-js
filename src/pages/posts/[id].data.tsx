@@ -1,5 +1,5 @@
 import { DataFn } from 'solid-app-router';
-import { PostDataProps } from '~/types'
+import { PostDataProps } from '~/types';
 import { usePost } from '~/lib/api';
 
 const PostData: DataFn<PostDataProps> = (props) => {
@@ -7,8 +7,8 @@ const PostData: DataFn<PostDataProps> = (props) => {
     return {
         get post() {
             return post();
-        }
+        },
     };
-}
+};
 
 export default PostData;

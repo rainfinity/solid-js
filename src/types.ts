@@ -1,9 +1,9 @@
 export type PostDataProps = {
-    id: number,
-    title: string,
-    body: string
-}
+    id: number;
+    title: string;
+    body: string;
+};
 
 export type PostListDataProps = {
-    posts: PostDataProps[]
-}
+    posts: PostDataProps[];
+};

@@ -1,9 +1,9 @@
 import { Component, For } from 'solid-js';
-import { Link } from "solid-app-router";
-import { Title } from 'solid-meta'
-import IconPencil from '~icons/heroicons-solid/pencil'
+import { Link } from 'solid-app-router';
+import { Title } from 'solid-meta';
+import IconPencil from '~icons/heroicons-solid/pencil';
 
-import { PostListDataProps } from '~/types'
+import { PostListDataProps } from '~/types';
 
 const Posts: Component<PostListDataProps> = (props) => (
     <section className="page px-8 py-4">
@@ -12,9 +12,17 @@ const Posts: Component<PostListDataProps> = (props) => (
             <IconPencil class="w-10 h-10 inline-block text-blue-900" />
             Posts
         </h1>
-        <hr class="mt-1 mb-4 text-blue-300"/>
+        <hr class="mt-1 mb-4 text-blue-300" />
         <p>Click the links in the Navigation above to load different routes.</p>
-        <For each={props?.posts}>{(post) => <div><Link href={`/posts/${post?.id}`} title={post?.title}>{post?.title}</Link></div>}</For>
+        <For each={props?.posts}>
+            {(post) => (
+                <div>
+                    <Link href={`/posts/${post?.id}`} title={post?.title}>
+                        {post?.title}
+                    </Link>
+                </div>
+            )}
+        </For>
     </section>
 );
 

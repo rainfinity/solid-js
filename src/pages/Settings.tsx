@@ -1,9 +1,8 @@
 import { Component } from 'solid-js';
 import { Title } from 'solid-meta';
-import IconCog from '~icons/heroicons-solid/cog'
+import IconCog from '~icons/heroicons-solid/cog';
 
 import PrivateLayout from '~/layouts/Private';
-
 
 const Settings: Component = () => (
     <PrivateLayout>
@@ -12,7 +11,7 @@ const Settings: Component = () => (
             <IconCog class="w-10 h-10 inline-block text-blue-900" />
             Settings
         </h1>
-        <hr class="mt-1 mb-4 text-blue-300"/>
+        <hr class="mt-1 mb-4 text-blue-300" />
         <p>All that configuration you never really ever want to look at.</p>
     </PrivateLayout>
 );

@@ -7,8 +7,8 @@ const PostsData: DataFn<PostListDataProps> = (props) => {
     return {
         get posts() {
             return posts();
-        }
+        },
     };
-}
+};
 
 export default PostsData;
